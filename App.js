@@ -7,8 +7,8 @@ import OfflineNotice from './components/OfflineNotice/OfflineNotice';
 export default function App() {
   return (
     <>
-      <OfflineNotice />
       <BooksScreen />
+      <OfflineNotice />
     </>
   );
 }

@@ -9,6 +9,7 @@ export const Container = styled.SafeAreaView`
   margin-top: ${Constants.statusBarHeight}px;
   margin-left: 20px;
   width: ${WIDTH - 40}px;
+  z-index: 10;
 `;
 
 export const LoadingSpinner = styled.ActivityIndicator`

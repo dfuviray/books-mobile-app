@@ -9,8 +9,8 @@ export const Container = styled.View`
   background-color: red;
   height: 50px;
   justify-content: center;
-  position: absoulute;
-  top: ${Constants.statusBarHeight};
+  position: absolute;
+  top: ${Constants.statusBarHeight}px;
   width: 100%;
-  z-index: 7;
+  z-index: 1;
 `;

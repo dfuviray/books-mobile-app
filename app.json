@@ -15,10 +15,17 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.deoviray.books",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.deoviray.books",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "A simple app fetching data from an API with pull to refresh functionality"
   }
 }
