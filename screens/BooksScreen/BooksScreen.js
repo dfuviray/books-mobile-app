@@ -1,15 +1,25 @@
 import React, { useEffect } from 'react';
-import { View, Text, FlatList, ListView, ScrollView } from 'react-native';
+import {
+  ActivityIndicator,
+  FlatList,
+  ListView,
+  ScrollView,
+  Text,
+  View,
+} from 'react-native';
 
 import AppText from '../../components/AppText/AppText';
 import booksApi from '../../api/books';
-import { Container } from './BooksScreenStyles';
+import { colors } from '../../config/colors';
+import { Container, LoadingSpinner } from './BooksScreenStyles';
 import ItemSeparator from '../../components/ItemSeparator/itemSeparator';
 import ListItem from '../../components/ListItem/ListItem';
 import useApi from '../../hooks/useApi';
 
 export default function BooksScreen() {
-  const { data: books, error, request: loadBooks } = useApi(booksApi.getBooks);
+  const { data: books, error, loading, request: loadBooks } = useApi(
+    booksApi.getBooks
+  );
 
   useEffect(() => {
     loadBooks();
@@ -17,6 +27,7 @@ export default function BooksScreen() {
 
   return (
     <Container>
+      <LoadingSpinner animating={loading} color={colors['mid-black']} />
       <FlatList
         data={books}
         renderItem={({ item }) => {
