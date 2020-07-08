@@ -6,11 +6,18 @@ export default function AppText({
   title,
   fontWeight,
   color,
-  size,
+  size = '18',
+  marginRight = '0',
   ...resProps
 }) {
   return (
-    <CustomText fontWeight={fontWeight} color={color} size={size} {...resProps}>
+    <CustomText
+      color={color}
+      fontWeight={fontWeight}
+      marginRight={marginRight}
+      size={size}
+      {...resProps}
+    >
       {title}
     </CustomText>
   );

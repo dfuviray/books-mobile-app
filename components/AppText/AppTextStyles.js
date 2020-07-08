@@ -3,8 +3,11 @@ import styled from 'styled-components/native';
 
 import { colors } from '../../config/colors';
 
+const unit = 'px';
+
 export const CustomText = styled.Text`
-  font-size: ${({ size }) => size || '18px'};
   color: ${({ color }) => color || colors.black};
+  font-size: ${({ size }) => size}px;
   font-weight: ${({ fontWeight }) => fontWeight || 'normal'};
+  margin-right: ${({ marginRight }) => marginRight}px;
 `;
