@@ -28,7 +28,7 @@ export default function BooksScreen() {
   return (
     <Container>
       {error.ok && <AppText title="Could not get data." />}
-      <LoadingSpinner animating={loading} color={colors['mid-black']} />
+      {/* <LoadingSpinner animating={loading} color={colors['mid-black']} /> */}
       <FlatList
         data={books}
         renderItem={({ item }) => {
