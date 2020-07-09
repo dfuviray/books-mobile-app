@@ -10,4 +10,5 @@ export const CustomText = styled.Text`
   font-size: ${({ size }) => size}px;
   font-weight: ${({ fontWeight }) => fontWeight || 'normal'};
   margin-right: ${({ marginRight }) => marginRight}px;
+  align-self: ${({ alignSelf }) => alignSelf || 'auto'};
 `;

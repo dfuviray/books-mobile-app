@@ -6,6 +6,7 @@ export default function AppText({
   title,
   fontWeight,
   color,
+  alignSelf,
   size = '18',
   marginRight = '0',
   ...resProps
@@ -15,6 +16,7 @@ export default function AppText({
       color={color}
       fontWeight={fontWeight}
       marginRight={marginRight}
+      alignSelf={alignSelf}
       size={size}
       {...resProps}
     >

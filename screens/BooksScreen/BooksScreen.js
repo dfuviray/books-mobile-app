@@ -27,7 +27,7 @@ export default function BooksScreen() {
 
   return (
     <Container>
-      {error.ok && <AppText title="Could not get data." />}
+      {error && <AppText title="Could not get data." alignSelf="center" />}
       {/* <LoadingSpinner animating={loading} color={colors['mid-black']} /> */}
       <FlatList
         data={books}
